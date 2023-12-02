@@ -7,10 +7,7 @@ def auto_click(num_clicks, delay):
     print(f"Auto clicker will start {init_delay}s. Move the mouse!")
     time.sleep(init_delay)
 
-    for i in range(num_clicks):
-        pyautogui.click()
-        # time.sleep(delay)
-        print(f"click {i}")
+    pyautogui.click(clicks=num_clicks, interval=0.00001)
 
 
 if __name__ == "__main__":
